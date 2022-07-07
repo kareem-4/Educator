@@ -1,0 +1,123 @@
+
+/*ـــــــــــــــــــــــــــ*\
+    #ANIMATIONS 
+\*ـــــــــــــــــــــــــــ*/
+
+
+
+
+
+.drop-animation { animation: drop 2.5s infinite;}
+
+@keyframes drop {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+
+.smooth-shaking-1 { animation: shaking-1 5s linear infinite;}
+
+@keyframes shaking-1 {
+    0%,
+    100% { transform: translate(0); }
+    25% { transform: translate(10px , 10px); }
+    50% { transform: translate(5px , 5px); }
+    75% { transform: translate(10px , -5px); }
+}
+
+
+.smooth-shaking-2 { animation: shaking-2 5s linear infinite;}
+
+@keyframes shaking-2 {
+    0%,
+    100% { transform: translate(0); }
+    25% { transform: translate(-10px , -10px); }
+    50% { transform: translate(-5px , -5px); }
+    75% { transform: translate(-10px , -5px); }
+}
+
+
+.smooth-shaking-3 { animation: shaking-2 5s linear infinite;}
+
+@keyframes shaking-3 {
+    0%,
+    100% { transform: translate(0); }
+    25% { transform: translate(-7px , -7px); }
+    50% { transform: translate(-14px , -14px); }
+    75% { transform: translate(-7px , -7px); }
+}
+
+
+.pulse-animation { animation: pulse 3s linear infinite; }
+
+@keyframes pulse {
+    0%,
+    70% { box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 1);}
+    100% { box-shadow: 0 0 0 15px transparent;}
+    
+}
+
+
+
+
+
+
+
+/*ــــــــــــــــــــــــــــــــــ*\
+    #Loading Screen Animation 
+\*ــــــــــــــــــــــــــــــــــ*/
+
+
+
+@keyframes rotate {
+    0% { 
+        -webkit-transform: rotate(0deg) scale(0.8); 
+        -moz-transform: rotate(0deg) scale(0.8);
+    }
+    50% { 
+        -webkit-transform: rotate(360deg) scale(1.2); 
+        -moz-transform: rotate(360deg) scale(1.2);
+    }
+    100% { 
+        -webkit-transform: rotate(720deg) scale(0.8); 
+        -moz-transform: rotate(720deg) scale(0.8);
+    }
+}
+
+@keyframes ball1 {
+    0% {
+        box-shadow: 30px 0 0 #f8b334;
+    }
+    50% {
+        box-shadow: 0 0 0 #f8b334;
+        margin-bottom: 0;
+        -webkit-transform: translate(15px,15px);
+        -moz-transform: translate(15px, 15px);
+    }
+    100% {
+        box-shadow: 30px 0 0 #f8b334;
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes ball2 {
+    0% {
+        ox-shadow: 30px 0 0 #97bf0d;
+    }
+    50% {
+        box-shadow: 0 0 0 #97bf0d;
+        margin-top: -20px;
+        -webkit-transform: translate(15px,15px);
+        -moz-transform: translate(15px, 15px);
+    }
+    100% {
+        box-shadow: 30px 0 0 #97bf0d;
+        margin-top: 0;
+    }
+}
+
