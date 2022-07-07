@@ -22,7 +22,7 @@ navbarToggleBtn.addEventListener("click" , function() {
 // Loading Screen Execution 
 
 window.addEventListener('load',function() {
-    setTimeout(hideOverlay,2500);
+    setTimeout(hideOverlay,1500);
 })
 
 
